@@ -27,19 +27,6 @@ class Crossover:
         # Priority queue
         self._candidate_pieces = []
 
-    # def child(self):
-    #     pieces = [None] * self._pieces_length
-    #
-    #     for piece, (row, column) in self._kernel.items():
-    #         index = (row - self._min_row) * self._child_columns + (column - self._min_column)
-    #         pieces[index] = self._parents[0].piece_by_id(piece)
-    #     root_piece_place = 0
-    #     for p in pieces:
-    #         if p.id == 0:
-    #             break
-    #         root_piece_place += 1
-    #     pieces = [pieces[root_piece_place]] + pieces[:root_piece_place] + pieces[root_piece_place + 1:]
-    #     return Individual(pieces, self._child_rows, self._child_columns, shuffle=False)
     def child(self):
         pieces = [None] * self._pieces_length
 
