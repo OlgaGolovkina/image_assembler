@@ -11,7 +11,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-downloads/
+static/
 eggs/
 .eggs/
 lib/
@@ -130,3 +130,4 @@ dmypy.json
 
 .idea/
 .DS_Store
+static/*
