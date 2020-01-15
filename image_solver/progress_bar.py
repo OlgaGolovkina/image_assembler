@@ -10,7 +10,7 @@ def print_progress(iteration, total, prefix="", suffix="", decimals=1, bar_lengt
     filled_length = int(round(bar_length * iteration / float(total)))
     bar = "\033[32m█\033[0m" * filled_length + "\033[31m-\033[0m" * (bar_length - filled_length)
 
-    sys.stdout.write("\r{0: <16} {1} {2}{3} {4}".format(prefix, bar, percents, "%", suffix))
+    sys.stdout.write(f"\r{prefix: <16} {bar} {percents}{'%'} {suffix}")
 
     if iteration == total:
         sys.stdout.write("\n")

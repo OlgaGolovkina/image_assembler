@@ -34,7 +34,7 @@ if __name__ == "__main__":
     solution = algorithm.start_evolution()
     end = time()
 
-    print(f"\n=== Done in {end - start} s")
+    print(f"\n=== Done in {end - start:.2f} s")
 
     solution_image = solution.to_image()
     solution_image_name = args.output

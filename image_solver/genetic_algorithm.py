@@ -30,7 +30,7 @@ class GeneticAlgorithm:
         termination_counter = 0
 
         for generation in range(self._generations):
-            print_progress(generation, self._generations - 1, prefix="=== Solving image: ")
+            print_progress(generation, self._generations - 1, prefix="=== Solving image:  ")
 
             new_population = []
 
