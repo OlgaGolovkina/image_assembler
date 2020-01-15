@@ -54,7 +54,7 @@ class GeneticAlgorithm:
 
             if termination_counter == self.TERMINATION_THRESHOLD:
                 print("\n\n=== GA terminated")
-                print("=== There was no improvement for {} generations".format(self.TERMINATION_THRESHOLD))
+                print(f"=== There was no improvement for {self.TERMINATION_THRESHOLD} generations")
                 return fittest
 
             self._population = new_population
