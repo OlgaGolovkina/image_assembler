@@ -23,7 +23,6 @@ if __name__ == "__main__":
     args = parse_arguments()
 
     image = cv2.imread(args.image)
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
     print(f"\n=== Population:  {args.population}")
     print(f"=== Generations: {args.generations}")
