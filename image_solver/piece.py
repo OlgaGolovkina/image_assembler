@@ -1,14 +1,11 @@
 class Piece:
     """Represents single image piece.
 
-    Each piece has identifier so it can be
-    tracked across different individuals
+    Each piece has identifier so it can be tracked across different individuals.
 
     :param image: ndarray representing piece's RGB values
     :param index: Unique id withing piece's parent image
-
     """
-
     def __init__(self, image, index):
         self.image = image[:]
         self.id = index

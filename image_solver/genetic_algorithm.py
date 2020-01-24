@@ -8,7 +8,6 @@ from .progress_bar import print_progress
 
 
 class GeneticAlgorithm:
-
     TERMINATION_THRESHOLD = 10
 
     def __init__(self, image, piece_size, population_size, generations, elite_size=2):

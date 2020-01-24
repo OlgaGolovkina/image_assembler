@@ -6,11 +6,11 @@ import bisect
 def roulette_selection(population, elites=4):
     """Roulette wheel selection.
 
-    Each individual is selected to reproduce, with probability directly
-    proportional to its fitness score.
+    Each individual is selected to reproduce, with probability directly proportional to its fitness
+    score.
 
     :params population: Collection of the individuals for selecting.
-    :params elite: Number of elite individuals passed to next generation.
+    :params elite:      Number of elite individuals passed to next generation.
     """
     fitness_values = [individual.fitness for individual in population]
     probability_intervals = [sum(fitness_values[:i + 1]) for i in range(len(fitness_values))]

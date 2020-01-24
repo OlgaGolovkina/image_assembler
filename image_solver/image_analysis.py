@@ -5,15 +5,13 @@ from .progress_bar import print_progress
 class ImageAnalysis:
     """Cache for dissimilarity measures of individuals
 
-    Class have static lookup table where keys are Piece's id's.
-    For each pair image pieces there is a map with values representing
-    dissimilarity measure between them. Each next generation have greater chance to use
-    cached value instead of calculating measure again.
+    Class have static lookup table where keys are Piece's id's. For each pair image pieces there is
+    a map with values representing dissimilarity measure between them. Each next generation have
+    greater chance to use cached value instead of calculating measure again.
 
     Attributes:
         dissimilarity_measures  Dictionary with cached dissimilarity measures for image pieces
         best_match_table        Dictionary with best matching piece for each edge and each piece
-
     """
     dissimilarity_measures = {}
     best_match_table = {}
@@ -21,8 +19,8 @@ class ImageAnalysis:
     @classmethod
     def analyze_image(cls, pieces):
         for piece in pieces:
-            # For each edge we keep best matches as a sorted list.
-            # Edges with lower dissimilarity_measure have higher priority.
+            # For each edge we keep best matches as a sorted list. Edges with lower
+            # dissimilarity_measure have higher priority.
             cls.best_match_table[piece.id] = {
                 "T": [],
                 "R": [],

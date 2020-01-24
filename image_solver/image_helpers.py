@@ -5,10 +5,10 @@ from .piece import Piece
 def flatten_image(image, piece_size, indexed=False):
     """Converts image into list of square pieces.
 
-    Input image is divided into square pieces of specified size and than
-    flattened into list. Each list element is PIECE_SIZE x PIECE_SIZE x 3
+    Input image is divided into square pieces of specified size and than flattened into list. Each
+    list element is PIECE_SIZE x PIECE_SIZE x 3
 
-    :params image:      Input image.
+    :params image:      Input image
     :params piece_size: Size of single square piece. Each piece is PIECE_SIZE x PIECE_SIZE
     :params indexed:    If True list of Pieces with IDs will be returned, otherwise just plain list
                         of ndarray pieces
@@ -36,8 +36,7 @@ def flatten_image(image, piece_size, indexed=False):
 def assemble_image(pieces, rows, columns):
     """Assembles image from pieces.
 
-    Given an array of pieces and desired image dimensions, function
-    assembles image by stacking pieces.
+    Given an array of pieces and desired image dimensions, func assembles image by stacking pieces.
 
     :params pieces:  Image pieces as an array.
     :params rows:    Number of rows in resulting image.
