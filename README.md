@@ -1,7 +1,7 @@
 # image_assembler
 **Image Assembler App** is responsible for collecting the patches and reassembling them into the original image.
 #
-**BEFORE:** _Mixed Pieces_ -------------------------------------------------------------------------> **AFTER:** _Final Picture_
+**BEFORE:** _Mixed Pieces_ --------------------------------------------------------------------> **AFTER:** _Final Picture_
 ![image_assembler Logo](images/demo_pic.jpg)
 
 * **Requirements**
